@@ -12,10 +12,25 @@ public class Main {
 
         Firma janNowakServices = new Firma("Jan Nowak IT Services", new RyczaltEwidencjonowany());
 
-        janNowakServices.dodajPrzychod("Programowanie", 15_000);
+        janNowakServices.dodajPrzychod("Programowanie", 1000);
         janNowakServices.dodajWydatek("Energetyki", 200);
 
         janNowakServices.wyswietlPodsumowanie();
+
+        Firma zbigniewFryzjer = new Firma("ZbigniewFryzjer", new Liniowy());
+
+        zbigniewFryzjer.dodajPrzychod("Kolorowanie i cięcie", 700);
+        zbigniewFryzjer.dodajWydatek("farby", 100);
+
+        zbigniewFryzjer.wyswietlPodsumowanie();
+
+        Firma wykonczeniowkaKowalski = new Firma("Wykonczeniowka", new SkalaPodatkowa());
+
+        wykonczeniowkaKowalski.dodajPrzychod("Wykonczenie willi", 100_000);
+        wykonczeniowkaKowalski.dodajPrzychod("Odnowa Hali", 50_000);
+        wykonczeniowkaKowalski.dodajWydatek("Materialy i Paliwo", 20_000);
+
+        wykonczeniowkaKowalski.wyswietlPodsumowanie();
     }
 
 }
